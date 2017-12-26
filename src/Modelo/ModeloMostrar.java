@@ -19,43 +19,24 @@ import java.util.logging.Logger;
  */
 public class ModeloMostrar {
     
-    public ArrayList<Pelicula> getListadoPelicula() throws SQLException{
-        ArrayList<Pelicula> listPelicula = null;
-        String sql="SELECT NOMBRE, FORMATO$K FROM A_PELICULA";
+    public ArrayList<Empleados> getListadoEmpleados() throws SQLException{
+        ArrayList<Empleados> listEmpleados = null;
+        String sql="NOMBRE, APELLIDO, NOM_DEPTO FROM EMPLEADOS";
         PreparedStatement preparedStatement;
         try {
-            listPelicula=new ArrayList<>();
+            listEmpleados=new ArrayList<>();
             preparedStatement = Conexion.getInstance().prepareStatement(sql);
             ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()){
-            Pelicula pelicula = new Pelicula();
-            pelicula.setNombre(resultSet.getString("NOMBRE"));
-            pelicula.setFormato4k(resultSet.getString("FORMATO4K"));
-            listPelicula.add(pelicula);
+            Empleados empleados = new Empleados();
+            empleados.setNombre(resultSet.getString("NOMBRE"));
+            empleados.setApellido(resultSet.getString("APELLIDO"));
+            empleados.setNom_depto(resultSet.getString("NOM_DEPTO"));
+            listEmpleados.add(empleados);
         }
         } catch (SQLException ex) {
             Logger.getLogger(ModeloMostrar.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return listPelicula;
+        return listEmpleados;
     }
-    
-    public ArrayList<Categoria> getListadoCategoria() throws SQLException{
-        ArrayList<Categoria> listCategoria = null;
-        String sql="SELECT DESCRIPCION_A_CATEGORIA FROM A_CATEGORIA";
-        PreparedStatement preparedStatement;
-        try {
-            listCategoria=new ArrayList<>();
-            preparedStatement = Conexion.getInstance().prepareStatement(sql);
-            ResultSet resultSet = preparedStatement.executeQuery();
-        while (resultSet.next()){
-            Categoria categoria = new Categoria();
-            categoria.setDescripcion(resultSet.getString("DESCRIPCION_A_CATEGORIA"));
-            listCategoria.add(categoria);
-        }
-        } catch (SQLException ex) {
-            Logger.getLogger(ModeloMostrar.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return listCategoria;
-    }
-    
 }

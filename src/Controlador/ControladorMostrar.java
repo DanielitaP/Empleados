@@ -5,8 +5,7 @@
  */
 package Controlador;
 
-import Modelo.Pelicula;
-import Modelo.Categoria;
+import Modelo.Empleados;
 import Modelo.ModeloMostrar;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -17,16 +16,11 @@ import java.util.ArrayList;
  */
 public class ControladorMostrar {
     
-    private ModeloMostrar modeloLista;
+    private ModeloMostrar modeloMostrar;
     
-    public ArrayList <Pelicula> getListadoPelicula() throws SQLException{
-        modeloLista = new ModeloMostrar();
-        return modeloLista.getListadoPelicula(); 
-    }
-    
-    public ArrayList <Categoria> getListadoCategoria() throws SQLException{
-        modeloLista = new ModeloMostrar();
-        return modeloLista.getListadoCategoria(); 
+    public ArrayList <Empleados> getListadoPelicula() throws SQLException{
+        modeloMostrar = new ModeloMostrar();
+        return modeloMostrar.getListadoEmpleados();
     }
     
 }

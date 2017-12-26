@@ -5,7 +5,7 @@
  */
 package Controlador;
 
-import Modelo.ModeloBorrar;
+import Modelo.ModeloEliminar;
 import java.sql.SQLException;
 
 /**
@@ -15,18 +15,13 @@ import java.sql.SQLException;
 
 public class ControladorEliminar {
     
-    private ModeloBorrar modeloBorrar;
+    private ModeloEliminar modeloEliminar;
     
-    public void borrarPelicula(int codigo) throws SQLException{
-        modeloBorrar=new ModeloBorrar();
-        modeloBorrar.borrarPelicula(codigo);
+    public void eliminarEmpleado(int codigo) throws SQLException{
+        modeloEliminar=new ModeloEliminar();
+        modeloEliminar.EliminarEmpleados(codigo);
     }
-    
-    public void borrarCategoria(int id_cat) throws SQLException{
-        modeloBorrar=new ModeloBorrar();
-        modeloBorrar.borrarCategoria(id_cat);
-    }
-    
+   
     
     
 }

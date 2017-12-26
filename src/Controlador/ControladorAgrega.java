@@ -10,19 +10,15 @@ import java.sql.SQLException;
 
 /**
  *
- * @author daniela
+ * @author Daniela
  */
 public class ControladorAgrega {
     private ModeloAgrega modeloAgrega;
     
-    public void agregaPelicula(int codigo, int precio, int id_cat, String formato4k, String nombre) throws SQLException{
+    public void agregaEmpleados(Integer codigo, String rut, String nombre, String apellido, Integer celular, String email, Integer sueldo_bruto, String est_civil, String nom_depto) throws SQLException{
         modeloAgrega=new ModeloAgrega();
-        modeloAgrega.agregaPelicula(codigo, precio, id_cat, formato4k, nombre);
+        modeloAgrega.agregaEmpleados(codigo, rut, nombre, apellido, celular, email, sueldo_bruto, est_civil, nom_depto);
     }
     
-    public void agregaCategoria(int id_cat, String descripcion) throws SQLException{
-        modeloAgrega=new ModeloAgrega();
-        modeloAgrega.agregaCategoria(id_cat, descripcion);
-    }
     
 }

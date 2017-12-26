@@ -5,7 +5,7 @@
  */
 package Vista;
 import Controlador.ControladorMostrar;
-import Modelo.Pelicula;
+import Modelo.Empleados;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -28,7 +28,7 @@ private final DefaultTableModel defaultTableModel;
         defaultTableModel.addColumn("FORMATO4K");
         jTable1.setModel(defaultTableModel);
         controladorLista = new ControladorMostrar();
-        ArrayList<Pelicula> listPelicula=controladorLista.getListadoPelicula();
+        ArrayList<Empleados> listPelicula=controladorLista.getListadoPelicula();
         Object[] fila=new Object[2];
         for(int x=0; x<listPelicula.size(); x++){
             fila[0]=listPelicula.get(x).getNombre();

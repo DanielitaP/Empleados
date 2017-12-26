@@ -10,14 +10,14 @@ import java.sql.SQLException;
 
 /**
  *
- * @author Cèsar
+ * @author Daniela
  */
 public class ControladorModificar {
     
     private ModeloModificar modeloModificar;
     
-    public void modificaPelicula(int codigo, String nombre) throws SQLException{
+    public void modificaEmpleados(Integer codigo, String rut, String nombre, String apellido, Integer celular, String email, Integer sueldo_bruto, String est_civil, String nom_depto) throws SQLException{
         modeloModificar=new ModeloModificar();
-        modeloModificar.modificaPelicula(codigo, nombre);
+        modeloModificar.modificaEmpleados(codigo, nombre, nombre, nombre, codigo, nombre, codigo, nombre, nombre);
     }
 }

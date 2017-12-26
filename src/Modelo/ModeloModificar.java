@@ -17,11 +17,11 @@ public class ModeloModificar {
     
     
     
-    public void modificaPelicula(int codigo, String nombre) throws SQLException{
-        System.out.println("Modificar registro...");
+    public void modificaEmpleados(Integer codigo, String rut, String nombre, String apellido, Integer celular, String email, Integer sueldo_bruto, String est_civil, String nom_depto) throws SQLException{
+        System.out.println("Modificar registro empleado...");
         Statement dec;
         dec=Conexion.conexion.createStatement();
-        String query1="UPDATE A_PELICULA SET NOMBRE='"+nombre+"' WHERE CODIGO="+codigo;
+        String query1="UPDATE EMPLEADO SET NOMBRE='"+nombre+"' WHERE CODIGO="+codigo;
         dec.executeUpdate(query1);
     }
     

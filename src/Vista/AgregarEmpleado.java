@@ -38,34 +38,36 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jTextFieldCodigo = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextFieldPrecio = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextFieldId_categoria = new javax.swing.JTextField();
+        jTextFieldcelular = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextFieldFormato4k = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jTextFieldNombre = new javax.swing.JTextField();
-        jButtonIngresaAlumno = new javax.swing.JButton();
+        jButtonAgregarEmpleado = new javax.swing.JButton();
         jButtonLimpiar = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jTextFieldApellido = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jTextFieldsueldobruto = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jTextFieldestadocivil = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jTextnombredepto = new javax.swing.JTextField();
+        jTextFieldrut = new javax.swing.JTextField();
+        jTextFieldemail = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Ingresar Pelicula");
+        jLabel1.setText("Agregar Empleado");
 
         jLabel2.setText("CODIGO");
 
-        jLabel5.setText("PRECIO");
+        jLabel5.setText("RUT");
 
-        jTextFieldPrecio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldPrecioActionPerformed(evt);
-            }
-        });
+        jLabel6.setText("CELULAR");
 
-        jLabel6.setText("ID CATEGORIA");
-
-        jLabel4.setText("FORMATO4K");
+        jLabel4.setText("EMAIL");
 
         jLabel3.setText("NOMBRE");
 
@@ -75,11 +77,11 @@ public class AgregarEmpleado extends javax.swing.JFrame {
             }
         });
 
-        jButtonIngresaAlumno.setBackground(new java.awt.Color(51, 255, 51));
-        jButtonIngresaAlumno.setText("INGRESAR");
-        jButtonIngresaAlumno.addActionListener(new java.awt.event.ActionListener() {
+        jButtonAgregarEmpleado.setBackground(new java.awt.Color(51, 255, 51));
+        jButtonAgregarEmpleado.setText("INGRESAR");
+        jButtonAgregarEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonIngresaAlumnoActionPerformed(evt);
+                jButtonAgregarEmpleadoActionPerformed(evt);
             }
         });
 
@@ -99,6 +101,44 @@ public class AgregarEmpleado extends javax.swing.JFrame {
             }
         });
 
+        jLabel7.setText("APELLIDO");
+
+        jTextFieldApellido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldApellidoActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("SUELDO BRUTO");
+
+        jLabel9.setText("ESTADO CIVIL");
+
+        jTextFieldestadocivil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldestadocivilActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setText("NOMBRE DEPARTAMENTO");
+
+        jTextnombredepto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextnombredeptoActionPerformed(evt);
+            }
+        });
+
+        jTextFieldrut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldrutActionPerformed(evt);
+            }
+        });
+
+        jTextFieldemail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldemailActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -111,55 +151,81 @@ public class AgregarEmpleado extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addComponent(jLabel4)
                         .addComponent(jLabel5)
-                        .addComponent(jLabel6))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButtonIngresaAlumno)
-                        .addGap(11, 11, 11)))
+                        .addComponent(jLabel7)
+                        .addComponent(jLabel6)
+                        .addComponent(jLabel8)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonAgregarEmpleado))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel1)
-                            .addComponent(jTextFieldCodigo)
-                            .addComponent(jTextFieldNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
-                            .addComponent(jTextFieldFormato4k)
-                            .addComponent(jTextFieldPrecio)
-                            .addComponent(jTextFieldId_categoria)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
+                        .addGap(38, 38, 38)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(38, 38, 38)
-                        .addComponent(jButtonLimpiar)))
-                .addContainerGap(42, Short.MAX_VALUE))
+                        .addComponent(jButtonLimpiar)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextFieldCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldcelular, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldsueldobruto, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldestadocivil, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextnombredepto, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldrut, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldemail, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(33, 33, 33))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(157, 157, 157)
+                .addComponent(jLabel1)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(31, 31, 31)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextFieldCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jTextFieldCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldrut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldId_categoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldcelular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextFieldFormato4k, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jTextFieldemail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                    .addComponent(jTextFieldsueldobruto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonIngresaAlumno)
+                    .addComponent(jTextFieldestadocivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextnombredepto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonAgregarEmpleado)
                     .addComponent(jButton2)
                     .addComponent(jButtonLimpiar))
                 .addContainerGap())
@@ -168,45 +234,50 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextFieldPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldPrecioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldPrecioActionPerformed
-
     private void jTextFieldNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldNombreActionPerformed
 
-    private void jButtonIngresaAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresaAlumnoActionPerformed
+    private void jButtonAgregarEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAgregarEmpleadoActionPerformed
         // TODO add your handling code here:
         try {
             if(jTextFieldCodigo.getText() == null) {
-                JOptionPane.showMessageDialog(null, "Ingrese Rut");
+                JOptionPane.showMessageDialog(null, "Ingrese codigo");
 
             }
             Integer codigo=new Integer(jTextFieldCodigo.getText());
-            Integer precio=new Integer(jTextFieldPrecio.getText());
-            Integer id_cat=new Integer(jTextFieldId_categoria.getText());
-            String formato4k=jTextFieldFormato4k.getText();
+            String rut=jTextFieldrut.getText();
             String nombre=jTextFieldNombre.getText();
+            String apellido=jTextFieldApellido.getText();
+            Integer celular=new Integer (jTextFieldcelular.getText());
+            String email=jTextFieldemail.getText();
+            Integer sueldo_bruto=new Integer (jTextFieldsueldobruto.getText());
+            String est_civil=jTextFieldestadocivil.getText();
+            String nom_depto=jTextnombredepto.getText();
+           
             ControladorAgrega controladorAgrega = new ControladorAgrega();
 
-            controladorAgrega.agregaPelicula(codigo, precio, id_cat, formato4k, nombre);
+            controladorAgrega.agregaEmpleados(codigo, rut, nombre, apellido, celular, email, sueldo_bruto, est_civil, nom_depto);
         } catch (SQLException ex) {
             Logger.getLogger(AgregarEmpleado.class.getName()).log(Level.SEVERE, null, ex);
         } catch (NumberFormatException err) {
-            System.out.println("codigo es numerico");
-            JOptionPane.showMessageDialog(null, "codigo es numerico");
+            System.out.println("codigo existe");
+            JOptionPane.showMessageDialog(null, "codigo existe");
         }
 
-    }//GEN-LAST:event_jButtonIngresaAlumnoActionPerformed
+    }//GEN-LAST:event_jButtonAgregarEmpleadoActionPerformed
 
     private void jButtonLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpiarActionPerformed
         // TODO add your handling code here:
         jTextFieldCodigo.setText(null);
-        jTextFieldPrecio.setText(null);
-        jTextFieldId_categoria.setText(null);
-        jTextFieldFormato4k.setText(null);
+        jTextFieldrut.setText(null);
         jTextFieldNombre.setText(null);
+        jTextFieldApellido.setText(null);
+        jTextFieldcelular.setText(null);
+        jTextFieldemail.setText(null);
+        jTextFieldsueldobruto.setText(null);
+        jTextFieldestadocivil.setText(null);
+        jTextnombredepto.setText(null);
 
     }//GEN-LAST:event_jButtonLimpiarActionPerformed
 
@@ -214,6 +285,26 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextFieldApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldApellidoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldApellidoActionPerformed
+
+    private void jTextFieldestadocivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldestadocivilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldestadocivilActionPerformed
+
+    private void jTextnombredeptoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextnombredeptoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextnombredeptoActionPerformed
+
+    private void jTextFieldrutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldrutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldrutActionPerformed
+
+    private void jTextFieldemailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldemailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldemailActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,19 +329,27 @@ public class AgregarEmpleado extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButtonIngresaAlumno;
+    private javax.swing.JButton jButtonAgregarEmpleado;
     private javax.swing.JButton jButtonLimpiar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jTextFieldApellido;
     private javax.swing.JTextField jTextFieldCodigo;
-    private javax.swing.JTextField jTextFieldFormato4k;
-    private javax.swing.JTextField jTextFieldId_categoria;
     private javax.swing.JTextField jTextFieldNombre;
-    private javax.swing.JTextField jTextFieldPrecio;
+    private javax.swing.JTextField jTextFieldcelular;
+    private javax.swing.JTextField jTextFieldemail;
+    private javax.swing.JTextField jTextFieldestadocivil;
+    private javax.swing.JTextField jTextFieldrut;
+    private javax.swing.JTextField jTextFieldsueldobruto;
+    private javax.swing.JTextField jTextnombredepto;
     // End of variables declaration//GEN-END:variables
 
    

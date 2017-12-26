@@ -20,34 +20,30 @@ import java.util.logging.Logger;
  */
 public class ModeloSolicita {
     
-    public Pelicula buscarPeliculaCodigo(int codigo, int precio, int id_cat) throws SQLException{
-        System.out.println("Buscar registro...");
-        String sql="SELECT CODIGO, PRECIO, ID_CAT, FORMATO4K, NOMBRE FROM A_PELICULA WHERE CODIGO="+codigo;
+    public Empleados SolicitarEmpleados (Integer codigo, String rut, String nombre, String apellido, Integer celular, String email, Integer sueldo_bruto, String est_civil, String nom_depto) throws SQLException{
+        System.out.println("Buscar registro empleado...");
+        String sql="SELECT CODIGO, RUT, NOMBRE, APELLIDO,CELULAR, EMAIL, SUELDO_BRUTO, EST_CIVIL, NOM_DEPTO FROM EMPLEADOS WHERE CODIGO="+codigo;
         PreparedStatement preparedStatement;
-        Pelicula pelicula=null;
+        Empleados empleados=null;
         try {
             preparedStatement = Conexion.getInstance().prepareStatement(sql);
             ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()){
-            pelicula = new Pelicula();
-            pelicula.setCodigo(codigo);
-            pelicula.setPrecio(precio);
-            pelicula.setId_cat(id_cat);
-            pelicula.setFormato4k(resultSet.getString("FORMATO4K"));
-            pelicula.setNombre(resultSet.getString("NOMBRE"));
+            empleados = new Empleados();
+            empleados.setCodigo(codigo);
+            empleados.setRut(rut);
+            empleados.setNombre(resultSet.getString("NOMBRE"));
+            empleados.setApellido(resultSet.getString("APELLIDO"));
+            empleados.setCelular(celular);
+            empleados.setEmail(resultSet.getString("EMAIL"));
+            empleados.setSueldo_bruto(sueldo_bruto);
+            empleados.setEst_civil(resultSet.getString("EST_CIVIL"));
+            empleados.setNom_depto(resultSet.getString("NOM_DEPTO"));
         }
         } catch (SQLException ex) {
             Logger.getLogger(ModeloMostrar.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return pelicula;
+        return empleados;
     }
     
-    public void buscarPeliculaNombre(String nombre){
-        
-    }
-
-    public Pelicula buscarPeliculaCodigo(int codigo) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
 }

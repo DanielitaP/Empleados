@@ -5,7 +5,7 @@
  */
 package Vista;
 import Controlador.ControladorSolicita;
-import Modelo.Pelicula;
+import Modelo.Empleados;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -127,7 +127,7 @@ public class SolicitarEmpleado extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         ControladorSolicita controladorBusca=new ControladorSolicita();
-        Pelicula pelicula=new Pelicula();
+        Empleados pelicula=new Empleados();
         Integer codigo=new Integer(jTextFieldCodPeli.getText());
         try {
             controladorBusca.buscarPeliculaCodigo(codigo);

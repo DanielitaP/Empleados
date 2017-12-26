@@ -5,7 +5,7 @@
  */
 package Controlador;
 
-import Modelo.Pelicula;
+import Modelo.Empleados;
 import Modelo.ModeloSolicita;
 import java.sql.SQLException;
 
@@ -15,19 +15,15 @@ import java.sql.SQLException;
  */
 public class ControladorSolicita {
     
-    private ModeloSolicita modeloBusca;
+    private ModeloSolicita modeloSolicita;
     
-     public Pelicula buscarPeliculaCodigo(int codigo) throws SQLException{
-         modeloBusca=new ModeloSolicita();
-         return modeloBusca.buscarPeliculaCodigo(codigo);  
+     public Empleados solicitaEmpleadosCodigo(Integer codigo, String rut, String nombre, String apellido, Integer celular, String email, Integer sueldo_bruto, String est_civil, String nom_depto) throws SQLException{
+         modeloSolicita=new ModeloSolicita();
+         return modeloSolicita.SolicitarEmpleados(codigo, rut, nombre, apellido, codigo, email, codigo, est_civil, nom_depto);
      }
 
-    public ModeloSolicita getModeloBusca() {
-        return modeloBusca;
+    public ModeloSolicita getModeloSolicita() {
+        return modeloSolicita;
     }
 
-    public void setModeloBusca(ModeloSolicita modeloBusca) {
-        this.modeloBusca = modeloBusca;
-    }
-    
 }
